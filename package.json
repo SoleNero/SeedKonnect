@@ -1,0 +1,21 @@
+{
+  "name": "SeedKonnect",
+  "version": "1.0.0",
+  "description": "From Uniformity to Diversity, a breeding ecosystem network connecting you to the seed you need.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoleNero/SeedKonnect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoleNero/SeedKonnect/issues"
+  },
+  "homepage": "https://github.com/SoleNero/SeedKonnect#readme"
+}
