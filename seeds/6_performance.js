@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {id: 1, 
          variety_id: 1,
          city_name_id: 1,
-         rank_id: 1
+         rank_id: 1 
         }
       ]);
     })
