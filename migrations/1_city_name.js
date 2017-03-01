@@ -4,7 +4,6 @@ exports.up = function(knex, Promise) {
     table.string('city_name').notNullable();
     table.decimal('long', 9,6);
     table.decimal('lati', 9,6);
-    table.integer('state_id').notNullable().references('id').inTable('state').onDelete('CASCADE');
   })
 };
 
