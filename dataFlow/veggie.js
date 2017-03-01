@@ -5,6 +5,7 @@ const map = {
 }
 
 const clickMarkerCity = {
+  city_name: 'Arlington',
   species_name: ['tomato'],
   variety_name: [
 'Amish Gold',
