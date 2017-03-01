@@ -1,6 +1,6 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('rank', table => {
-    table.increments();
+    table.increments('id');
     table.decimal('rank').notNullable();
   })
 };

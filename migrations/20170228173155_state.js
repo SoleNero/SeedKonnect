@@ -1,8 +1,8 @@
 'use strict';
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('state', table =>{
-    table.increments();
-    table.string('state').notNullable();
+    table.increments('id');
+    table.string('state');
   })
 };
 

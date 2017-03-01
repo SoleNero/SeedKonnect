@@ -18,5 +18,10 @@ exports.seed = function(knex, Promise) {
          {id: 6, 
          rank: 5}
       ]);
-    });
+    })
+    .then(() => {
+            return knex.raw(
+                "SELECT setval('rank_id_seq', (SELECT MAX(id) FROM rank));"
+            );
+        });
 };

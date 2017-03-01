@@ -280,5 +280,10 @@ exports.seed = function(knex, Promise) {
          lati: 44.2833
         }
       ]);
-    });
+    })
+    .then(() => {
+            return knex.raw(
+                "SELECT setval('city_name_id_seq', (SELECT MAX(id) FROM city_name));"
+            );
+        });
 };

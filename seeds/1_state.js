@@ -41,5 +41,10 @@ exports.seed = function(knex, Promise) {
          {id: 18, 
          state: 'WI'}
       ]);
-    });
+    })
+    .then(() => {
+            return knex.raw(
+                "SELECT setval('state_id_seq', (SELECT MAX(id) FROM state));"
+            );
+        });
 };

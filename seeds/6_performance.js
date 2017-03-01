@@ -1,13 +1,20 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('performance').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      return knex('performance').insert([
+        {id: 1, 
+         variety_id: 1,
+         city_name_id: 1,
+         rank_id: 1
+        }
       ]);
-    });
+    })
+    .then(() => {
+            return knex.raw(
+                "SELECT setval('performance_id_seq', (SELECT MAX(id) FROM performance));"
+            );
+        });
 };
