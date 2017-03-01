@@ -4,12 +4,12 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/performance_dev'
+    connection: 'postgres://localhost/seedlinked_dev'
   },
 
   test: {
     client: 'pg',
-    connection: 'postgres://localhost/performance_test'
+    connection: 'postgres://localhost/seedlinked_test'
   },
 
   production: {
