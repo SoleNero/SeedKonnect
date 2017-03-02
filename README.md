@@ -1,2 +1,2 @@
 # SeedKonnect
-From Uniformity to Diversity, a breeding ecosystem network connecting you to the seed you need.
+API for SeedLinked
