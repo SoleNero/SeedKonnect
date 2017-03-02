@@ -11,6 +11,23 @@ const router = express.Router();
 //stetch from rank grab rank and change for the best('green') 
 //or worst ('red')
 
+router.get('/variety', (req, res, next) => {
+  knex('variety')
+  .innerJoin('species', 'species.id', 'variety.species_id')
+  .orderBy('variety_name')
+  // .where ({
+  //   'variety.species_id': 'tomato'
+  // })
+  .then(data => {
+    const varietyList = data;
+    res.send(varietyList);
+  })
+  .catch(err => {
+    res.send(err);
+  });
+});
+
+
 //GET VAEIRTY INFO BY ID
 //from variety get variety_name; fruit_color, fruit_size, 
 //maturity_days, variety_image

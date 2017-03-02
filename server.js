@@ -4,14 +4,14 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 5000;
-const performance = require('./routes/performance');
+const variety = require('./routes/variety');
 const city = require('./routes/city');
 
 
 
 app.use(bodyParser.json());
 
-app.use('/performance', performance);
+app.use(variety);
 app.use('/city', city);
 
 

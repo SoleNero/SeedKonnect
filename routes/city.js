@@ -13,8 +13,8 @@ router.get('/', (req, res, next) => {
   knex('city')
     .orderBy('id')
     .then(data => {
-      const city = data;
-      res.send(data);
+      const cityList = data;
+      res.send(cityList);
     })
     .catch(err => {
       next(err);
@@ -27,7 +27,8 @@ router.get('/:id', (req, res, next) =>{
   knex('city')
     .where('id', id)
     .then((data) => {
-      res.send(data);
+      const city = data
+      res.send(city);
   })
     .catch(err => {
       next(err);
