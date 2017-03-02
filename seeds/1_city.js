@@ -1,9 +1,9 @@
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex('cities').del()
+  return knex('city').del()
     .then(function () {
       // Inserts seed entries
-      return knex('cities').insert([
+      return knex('city').insert([
         {id: 1, 
          city: 'Arlington',
          long: -89.380396,
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
     })
     .then(() => {
             return knex.raw(
-                "SELECT setval('cities_id_seq', (SELECT MAX(id) FROM cities));"
+                "SELECT setval('city_id_seq', (SELECT MAX(id) FROM city));"
             );
         });
 };

@@ -562,16 +562,16 @@ var myRank = [
 2.0,
 3.0]
 
-let newRank = myRank.reduce(function(col, rank){
-  console.log(col);
-  // console.log(rank);
-  if(rank <= 1.6){
-    return col = 'red';
-  }else if(rank > 1.6 && rank<=3.3){
-    return col = 'orange';
-  } else if (rank > 3.3) {
-    return col = 'green';
-  }
-}, [])
+// let newRank = myRank.reduce(function(col, rank){
+//   console.log(col);
+//   // console.log(rank);
+//   if(rank <= 1.6){
+//     return col = 'red';
+//   }else if(rank > 1.6 && rank<=3.3){
+//     return col = 'orange';
+//   } else if (rank > 3.3) {
+//     return col = 'green';
+//   }
+// }, [])
 
-console.log(newRank);
+// console.log(newRank);
