@@ -13,7 +13,6 @@ const router = express.Router();
 
 router.get('/variety', (req, res, next) => {
   knex('variety')
-  .innerJoin('species', 'species.id', 'variety.species_id')
   .orderBy('variety_name')
   // .where ({
   //   'variety.species_id': 'tomato'

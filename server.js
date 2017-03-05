@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 5000;
 const variety = require('./routes/variety');
 const city = require('./routes/city');
+const city_varieties = require('./routes/city_varieties');
 
 app.use(bodyParser.json());
 app.use(function (req, res, next) {
@@ -17,6 +18,7 @@ app.use(function (req, res, next) {
 
 app.use(variety);
 app.use('/city', city);
+app.use('/city_varieties', city_varieties);
 
 
 
