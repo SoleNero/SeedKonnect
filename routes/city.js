@@ -6,7 +6,7 @@ const router = express.Router();
 
 
 //GET LOCALIZATION FOR MAP
-//from city_name grab city_name, long&lati
+//from city_name grab city_name, lng&lat
 
 //get all cities
 router.get('/', (req, res, next) => {

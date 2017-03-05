@@ -1,7 +1,7 @@
 const map = {
   city_name: 'Arlington',
-  long: -89.380396,
-  lati: 43.338044
+  lng: -89.380396,
+  lat: 43.338044
 }
 
 const clickMarkerCity = {

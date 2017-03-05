@@ -2,8 +2,8 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTable('city', table =>{
     table.increments('id');
     table.string('city').notNullable();
-    table.decimal('longitude');
-    table.decimal('latitude');
+    table.decimal('lng');
+    table.decimal('lat');
   })
 };
 
