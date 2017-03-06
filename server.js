@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(variety);
+app.use('/variety', variety);
 app.use('/city', city);
 app.use('/city_varieties', city_varieties);
 
