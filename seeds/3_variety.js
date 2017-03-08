@@ -86,7 +86,9 @@ exports.seed = function(knex, Promise) {
          species: 'Tomato',
          fruit_color: 'red',
          size: 'medium',
-         maturity_days: 80
+         maturity_days: 80,
+         description: 'A German variety, which can be used as a salad tomato or appetizer. Plants produce an abundance of medium slender plum. Flesh is juicy, semi-sweet with unmatched flavor. Rare, easy to grow and productive.',
+         variety_image: 'css/img/eds_fat_plum.jpg'
         },
         {id: 13, 
          variety_name: 'Evergreen',
@@ -191,7 +193,9 @@ exports.seed = function(knex, Promise) {
          species: 'Tomato',
          fruit_color: 'yellow red',
          size: 'medium',
-         maturity_days: 80
+         maturity_days: 80,
+         description: 'This is an offtype of Marz Green that appeared in some growouts by different SSE members. It seems like the Marz Green seeds released around 2005 were not entirely stable, and gave a variety of striped segregation lines. Very good flavor.',
+         variety_image: "css/img/marz.jpg"
         },
         {id: 28, 
          variety_name: 'New Zealand Pink',
@@ -254,7 +258,9 @@ exports.seed = function(knex, Promise) {
          species: 'Tomato',
          fruit_color: 'red',
          size: 'large',
-         maturity_days: 72
+         maturity_days: 72,
+         description: 'The original variety, Rostova, is a heirloom red beefsteak from Southern Russia that was introduced to the west by Nik Peplenov who immigrated to the US in 1999 and brought with him his favorite heirloom seeds from the Rostov, Don region of Russia.',
+         variety_image: 'css/img/sunset.jpg'
         },
         {id: 37, 
          variety_name: 'White',

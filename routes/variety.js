@@ -30,7 +30,7 @@ router.get('/', (req, res, next) => {
 router.get('/:id', (req, res, next) => {
     const id = req.params.id;
     knex('variety')
-        .select('id', 'variety_name', 'species', 'variety_image', 'fruit_color', 'size', 'maturity_days')
+        .select('id', 'variety_name', 'species', 'variety_image', 'fruit_color', 'size', 'maturity_days', 'description')
         .where('variety_name', id)
         .then((data) => {
             res.send(data[0]);
