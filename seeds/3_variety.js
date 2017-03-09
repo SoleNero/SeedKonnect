@@ -147,7 +147,7 @@ exports.seed = function(knex, Promise) {
          maturity_days: 75
         },
         {id: 21, 
-         variety_name: 'Haidi?',
+         variety_name: 'Haidi',
          species: 'Tomato',
          fruit_color: 'red',
          size: 'small',
